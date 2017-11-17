@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+    <line>
+      <![CDATA[结束方法： plus]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="132519" started-at="2017-11-15T02:10:35Z" finished-at="2017-11-15T02:12:47Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="132519" started-at="2017-11-15T02:10:35Z" finished-at="2017-11-15T02:12:47Z">
+      <class name="com.appium.testDemo.TestAppiumApi">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.appium.testDemo.TestAppiumApi@52a86356]" name="beforeClass" is-config="true" duration-ms="43324" started-at="2017-11-15T10:11:46Z" finished-at="2017-11-15T10:12:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="testApi3()[pri:0, instance:com.appium.testDemo.TestAppiumApi@52a86356]" name="testApi3" duration-ms="16904" started-at="2017-11-15T10:12:29Z" finished-at="2017-11-15T10:12:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApi3 -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.appium.testDemo.TestAppiumApi@52a86356]" name="afterClass" is-config="true" duration-ms="1491" started-at="2017-11-15T10:12:46Z" finished-at="2017-11-15T10:12:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.appium.testDemo.TestAppiumApi -->
+      <class name="com.appium.testDemo.TestHgoSignIn">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.appium.testDemo.TestHgoSignIn@13a5fe33]" name="beforeClass" is-config="true" duration-ms="23732" started-at="2017-11-15T10:11:08Z" finished-at="2017-11-15T10:11:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="testSignIn()[pri:0, instance:com.appium.testDemo.TestHgoSignIn@13a5fe33]" name="testSignIn" duration-ms="13070" started-at="2017-11-15T10:11:32Z" finished-at="2017-11-15T10:11:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignIn -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.appium.testDemo.TestHgoSignIn@13a5fe33]" name="afterClass" is-config="true" duration-ms="642" started-at="2017-11-15T10:11:45Z" finished-at="2017-11-15T10:11:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.appium.testDemo.TestHgoSignIn -->
+      <class name="com.appium.testDemo.NewAPPTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.appium.testDemo.NewAPPTest@3108bc]" name="beforeClass" is-config="true" duration-ms="29759" started-at="2017-11-15T10:10:35Z" finished-at="2017-11-15T10:11:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="plus()[pri:0, instance:com.appium.testDemo.NewAPPTest@3108bc]" name="plus" duration-ms="2909" started-at="2017-11-15T10:11:04Z" finished-at="2017-11-15T10:11:07Z">
+          <reporter-output>
+            <line>
+              <![CDATA[结束方法： plus]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- plus -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.appium.testDemo.NewAPPTest@3108bc]" name="afterClass" is-config="true" duration-ms="675" started-at="2017-11-15T10:11:07Z" finished-at="2017-11-15T10:11:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.appium.testDemo.NewAPPTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

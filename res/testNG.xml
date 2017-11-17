@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite
+    name="Suite"
+    parallel="false" >
+
+    <test name="Test" >
+
+        <classes>
+
+            <class name="com.appium.testDemo.NewAPPTest" />
+            <class name="com.appium.testDemo.TestHgoSignIn" />
+            <class name="com.appium.testDemo.TestAppiumApi" />
+        </classes>
+    </test>
+    <!-- Test -->
+
+    <listeners>
+
+        <!-- 这是你需要加的东西 -->
+
+        <listener class-name="org.uncommons.reportng.HTMLReporter" />
+
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+    </listeners>
+
+    <usedefaultlisteners name="false" />
+
+</suite> <!-- Suite -->
