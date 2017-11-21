@@ -11,7 +11,7 @@ public class SearchPage {
 	AndroidDriver<AndroidElement> driver;
 	WebElement searchContent;
 	WebElement searchBtn;
-	WebElement viewGoods;
+	String searchResultActivity = ".ui.search.SearchResultActivity";
 	
 	
 	public SearchPage(AndroidDriver<AndroidElement> driver) {
@@ -20,26 +20,28 @@ public class SearchPage {
 	
 //	根据搜索框输入内容搜索商品
 	public boolean searchGoods(String goodsName) {
-		searchContent = driver.findElementById("com.firstshop:id/searchContent");
+//		输入内容 com.firstshop:id/searchContent
+		searchContent = driver.findElementByClassName("android.widget.EditText");
+		searchContent.click();
 		searchContent.sendKeys(goodsName);
+//		点击搜索
+		searchBtn = driver.findElementById("com.firstshop:id/search");
 		searchBtn.click();
 //		判断是否能搜索到结果
 		ReadyForNext readyForNext = new ReadyForNext(driver);
-		boolean flag = readyForNext.isElementsExistByclassName(3000, "android.widget.LinearLayout");
-		if (flag) {
-			viewGoods = driver.findElementByClassName("android.widget.LinearLayout");
-			return true;
-		} else {
-			System.out.println("找不到与输入内容  【" + goodsName + "】  相关的商品，或者是发生了搜索超时错误");
-			return false;
+		System.out.println("开始判断是否搜索到商品。。。");
+//		判断当前activity是否是searchResultActivity
+		if (readyForNext.activityVerify(2000, driver, searchResultActivity)) {
+			SearchResultPage searchResultPage = new SearchResultPage(driver);
+			return searchResultPage.searchResult(goodsName);
 		}
+		System.out.println("当前activity不是搜索结果activity：" + driver.currentActivity());
+		return false;
 	}
 	
-//	查看商品详情
+//	查看商品
 	public void viewGoods() {
-		viewGoods.click();
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-		
+		SearchResultPage searchResultPage = new SearchResultPage(driver);
+		searchResultPage.viewGoods();
 	}
-	
 }

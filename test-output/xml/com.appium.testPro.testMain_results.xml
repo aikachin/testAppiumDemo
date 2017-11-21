@@ -4,14 +4,15 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="6.231">
+           time="12.955">
   <properties />
-            <testcase name="testMakeOrder" time="6.231" classname="com.appium.testPro.testMain">
+            <testcase name="testMakeOrder" time="12.955" classname="com.appium.testPro.testMain">
                 <failure type="java.lang.NullPointerException"
                   message="(null)"
               >
 <![CDATA[java.lang.NullPointerException
-  com.appium.testPro.testMain.testMakeOrder(testMain.java:36)
+  com.appium.testPro.SearchPage.searchGoods(SearchPage.java:24)
+  com.appium.testPro.testMain.testMakeOrder(testMain.java:39)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
